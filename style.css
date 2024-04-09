@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  background-color: black;
+}
+
+body {
+  font-family: "Pretendard";
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 32px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 60px;
+  height: 60px;
+}
+.header__logo h1 {
+  font-size: 2rem;
+  color: white;
+}
+.header__logo h1 span {
+  color: red;
+}
+
+ul.header__link {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+ul.header__link li a {
+  color: white;
+}
+
+section#home {
+  margin-top: 100px;
+}
+
+section#home .home__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+section#home .home__profile img {
+  width: 80%;
+}
+
+section#home .home__description {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#home .home__description h3 {
+  color: white;
+  line-height: 150%;
+}
+
+section#home .home__profile h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.about__activity__container {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.about__activity__container .about__activity {
+  width: 30%;
+}
+
+.about__activity__container .about__activity img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.about__activity__container .about__activity h2 {
+  font-size: 2rem;
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about__activity__container .about__activity h3 {
+  font-size: 0.8rem;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 150%;
+}
