@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    color:white;
+} 
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Pretendard";
+    background-color: black;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+a {
+    text-decoration-line: none;
+    color:white;
+}
+
+#header {
+    padding:32px;
+    position: sticky;
+    top:0px;
+    max-width: 1920px;
+    background-color: black;
+}
+
+
+#header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header__logo__img {
+    width:60px;
+    height:60px;
+}
+
+#span__red {
+    color:red;
+}
+
+
+.header__logo {
+    gap:10px;
+    display:flex;
+    width:60px;
+    height:60px;
+}
+
+.header__logo h1 {
+    font-size:2rem;
+}
+
+.header__Link {
+    display: flex;
+    font-size: 1.5rem;
+    list-style-type: none;
+    gap:10px;
+}
+
+/* ======================================= */
+#home {
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:100px;
+    margin-top:200px;;
+}
+
+#home__logo__img {
+    width:80%;
+    height:auto;
+}
+
+.home__profile h2 {
+    color:white;
+    font-size: 3rem;
+}
+
+.home__description h3 {
+    color:white;
+    font-size: 2.5rem;
+}
+
+.home__profile {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    width:100%;
+}
+
+/* ========================================= */
+
+#about {
+    margin-top:200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about__activity__container {
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    text-align:center;
+}
+
+.about__activity {
+    display:flex;
+    flex-direction: column;
+    gap:75px;
+    width: 30%;
+    height:auto;
+
+}
+
+#about__img {
+    width:80%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 400px;
+}
+
+.about__activity__title {
+    font-size: 3rem;
+}
+
+.about__activity__subtitle {
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+/* ============================================ */
+
+#contact {
+    margin-top:200px;
+    margin-bottom: 500px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact__button {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:200px;
+    font-size: 2rem;
+    text-decoration-line: underline;
+}
+
+
+#contact__title {
+    padding:30px;
+    border : 20px solid #ff7710;
+    border-radius: 50px;
+    background-color: #ff7710;
+}
+
+
+@media (max-width: 1300px) {
+    html {
+      font-size: 12px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .about__activity__container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about__activity {
+      width: 80%;
+    }
+}
