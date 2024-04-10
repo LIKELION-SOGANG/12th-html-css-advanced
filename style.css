@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+html{
+    font-size: 16px;
+    background-color: black;
+}
+
+body * {    
+    font-family: "Pretendard-Regular";
+    word-break: keep-all;
+}
+
+
+header{
+    padding: 32px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#header__logo__img{
+width: 60px;
+height: 60px;
+}
+
+#header__nav{
+    position: sticky;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.header__Link{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#span__red{
+    color: red;
+}
+
+.header__logo h1{
+    font-size: 2rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+section#home{
+    margin-top: 100px;
+}
+
+section#home .home__profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+section#home .home__profile img {
+    width: 80%;
+}    
+
+section#home .home__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+section#home .home__profile h2{
+    color: white;
+    font-size: 3rem;
+}
+
+section#home .home__profile h3{
+    color: white;
+    font-size: 150%;
+}
+
+.about__activity__container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.about__activity__container .about__activity{
+    width: 30%;
+}
+
+.about__activity__container .about__activity img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.about__activity__container .about__activity h2{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about__activity__container .about__activity h3{
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 150%;
+}
+
+section#contact{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__button h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact__button{
+    background-color: #ff7710;
+    display: flex;
+    height: 100px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+@media (max-width: 1300px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px){
+    .about__activity__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__activity{
+        width: 75%;
+    }
+}
