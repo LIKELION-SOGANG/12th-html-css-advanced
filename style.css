@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+*{
+    color: white;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+html {
+    font-size: 16px;
+}
+
+body * {
+    font-family: "Pretendard";
+    word-break: keep-all;
+  }
+  
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    padding: 50px;
+} 
+
+html, body, section {
+    width: 100%;
+}
+
+/* header */
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    max-width: 1920px;
+}
+
+#header__nav{
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+  }
+
+.header__logo{
+    display:flex;
+    align-items: center;
+}
+
+#header__logo__img{
+    width: 60px;
+    height : 60px;
+}
+
+.header__logo h1{
+    font-size: 2rem;
+}
+
+#span__red {
+    color: red;
+}
+
+.header__Link{
+    display:flex;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.header__Link li {
+    padding: 20px;
+}
+
+/* home */
+
+#home{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.home__profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* gap:50px; */
+}
+
+#home__logo__img {
+    width: 80%;
+    height: auto;
+}
+  
+.home__description{
+    text-align: center;
+}
+
+.home__profile h2{
+    font-size: 3rem;
+}
+
+.home__description h3{
+    font-size: 2.5rem;
+} 
+
+/* About */
+
+#about{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about__activity__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.about__activity {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 30%;
+    text-align: center;
+}
+
+.about__activity__img img{
+    transition: all 300ms ease-in;
+    border-radius: 50%;
+    width: 80%;
+    height: auto;
+}
+
+.about__activity__tile {
+    font-size: 3rem;
+}
+
+.about__activity__subtitle {
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+/* contact */
+
+.contact__button{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height : 200px; */
+
+
+#contact__title{
+
+    background-color : #ff7710;
+    font-size : 1.5rem;
+    padding : 20px;
+    border-radius: 20px;
+}
+
+/* media query */
+
+@media screen and (max-width: 1300px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+    .about__activity__container {
+    flex-direction: column;
+    align-items: center;
+    }
+
+.about__activity {
+    width: 80%;
+    }
+}
