@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    margin: 0px;
+    background-color: black;
+    max-width: 1920px;
+}
+
+header{
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.header-brand{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    align-items: center;
+}
+
+.red_header{
+    color: red;
+}
+
+.navigation-var{
+    margin-right: 60px;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home{
+    padding-top: 100px;
+}
+
+.home_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+}
+
+#lionlogo{
+    width: 80%;
+}
+
+.home_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-image{
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 42px;
+    border-radius: 50%;
+}
+
+footer{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact_us{
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #ff7710;
+}
