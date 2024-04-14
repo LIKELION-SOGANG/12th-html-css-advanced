@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
 *{
     box-sizing: border-box;
     color: white;
+}
+
+html{
+    font-size: 16px;
 }
 
 body{
@@ -10,29 +19,42 @@ body{
 }
 
 header{
-    width: 1920px;
+    padding: 32px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: fixed;
+    margin-top: 0;
 }
 
-.header-brand{
+.head_var{
+    font-size: 2rem;
     display: flex;
-    justify-content: space-between;
-    font-size: 30px;
     align-items: center;
 }
 
-.red_header{
+#logo{
+    height: 60px;
+    width: 60px;
+}
+
+.head_var span{
     color: red;
 }
 
-.navigation-var{
-    margin-right: 60px;
-    width: 230px;
+.navigation_var{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav_menu{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 .home{
@@ -56,6 +78,10 @@ header{
     align-items: center;
 }
 
+.home_2 h3{
+    margin: 0;
+}
+
 .about{
     display: flex;
     justify-content: space-evenly;
@@ -77,13 +103,18 @@ header{
 }
 
 footer{
-    padding: 30px;
+    height: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .contact_us{
-    border-radius: 30px;
     padding: 30px;
     background-color: #ff7710;
+    border-radius: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
